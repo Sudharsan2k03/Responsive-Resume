@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="icon" href="ss.jpg" type="image/jpg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fff;
+      color:black;
+      line-height: 1.6;
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+    }
+    .section-title {
+      color: #f85c37;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+      margin-top: -15px;
+      display: inline-block;
+    }
+    .skill-bar {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .skill-bar-fill {
+      background: #f85c37;
+      height: 10px;
+    }
+    .star {
+      color: #f85c37;
+    }
+    .grey-star {
+      color: #ccc;
+    }
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container-centered {
+      display: flex;
+      justify-content: center;
+    }
+    ul.square-list {
+      list-style-type:square;
+      padding-left: 20px;
+    }
+    .square-list li::marker{
+      color: orangered;
+      font-size: 20px;
+    }
+    .vr-divider {
+      border-left: 2px solid #ccc;
+      height: 100%;
+      margin: 0 20px;
+    }
+    #personal{
+      margin-top: 30px; 
+    }
+    #hob{
+      margin-top: 30px;
+    }
+    #space{
+      margin-top: 25px;
+    }
+    #para{
+      padding: 15px;/
+    }
+    #dot{
+      color: orangered;
+    }
+  </style>
+</head>
+<body>
+  <div class="d-flex justify-content-center mt-4">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-10">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-right">
+              <p class="mb-1">75/2 Your address goes here<br>New York</p>
+              <p class="mb-1">Phone:+880 1716 539 992</p>
+              <p class="mb-1">Email:siambd2012@yahoo.com</p>
+              <p class="mb-0">Date of Birth:20 Jun 1990</p>
+            </div>
+            <div class="col-md-4 text-center" id="space">
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUQEhIVFRUVFxUVFRUVFRUVFRUWFRUWFxUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQFy0lICAvLSstLS0tLS0tLS0tLS0tKy0tLS0tLS0tLS0tLS8tLS0tLS0tLS0rLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABAEAABAwIDBAcEBwcEAwAAAAABAAIDBBEFEiExQVFhBhMicYGRoTJSscEUI0JictHhBzOCkqLw8RU0wuIkQ2P/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAlEQACAgICAgIDAAMAAAAAAAAAAQIRAyESMQRBIlETMnFCYaH/2gAMAwEAAhEDEQA/AML0lB1Wdiatvi9ATdUhw/ktJrZMXohwsS3sUv6KQm3xlRRVkFzbLRYBLsVHOxWWCXutIks6LRP0upkdSCq2kHYCkUcBJuqZJbCSykNOl1AqG2T5fZoUjH5KprAXO+NrqqlxhrjYgnQAWIDQXHafesLnwKgYxO5rxdzcp95pOW/vDeOfw2qmxWVzMns8QWm7TcO1G8bfguHLllKXFdHbixRStlxX9IyHPzWcxmpOWxtYZY7b3d6gQ45OLF7gwW7MTAGNaNtyQATu3rM1NSXGRv3y/mSDp5ABIpMxDnG/Lxta3LYs9+zal0jQx9KHOkADW3FtXNLgN/s668rH8tBL0iLO26WAXGrTP1ZA2DSNubbxsub1Li1l77QDt97UemqgU0WUda8Zt4B1vwJ57LJ0n7Jf8OgVFV9IByu60DU5SXgHb7fDXZ8VZ0kJa0PdOwmwBaSdAANRHYWK583pPVkZBM6Ngt2IgGN02XsLnxVhh2NPeQHObl2EynMHd/ZPwIV7IaRpW4zGXEGRo33Iy8b6XNvGx5KHidfpob92t0zLRMe7NkFwbnKH5HHcHBzWi17a5fLamKqsLTllsGu7Ia0ZgLDaBtFrcuGlltCZjKBQVcxcU5ShKlp7HTYn6eJdSRg2O2Sbp8sSHMToVj1M/VT8+ir4mqVJsVoRFnkN1OpHEqjlecyu8NaSAkhMm2PFBO9UUFYrHpaIFQpMJHBaXqUkwLKwoy78KHBMTYOOC1v0dE6lRoNmDqMGUjDMMtuWrkoQm46SxTSQWx+hh0srSGMBQ4BZTWOUsaHHQg7UJYhlJ4DhdKa5HNIAxx4Anis8jqLZcFckjOdIpWuYDe2U7CNoOlw4a7ePzWVke1wLCQDtbbZ3ZTs07+9TMRxI67HXO3KGgjcABr4nmquCtJuMvm3aL8f8Lx1J9s9lQSVDbKQh1zre3jstb7w4b9DxSnSCM5QeHdpfZx0Pop8LJHadWSDu/wCp+SlzdGJnn2NDvO0f3zR+S9MbxqPRja52Y2Gzs28Blt5/BKqX6ho2XFu5h0C10vQuVoBy38u/aoUvRl+2x0HrsPitlRjJGVgZew5b+J2X+KW6cNPZbmPvG3pfQfqtBJ0XmGxu6w8QqqowKVm1p8B63VWTxsk4ZiDSMkl9+gLdL8NLKf1mUZM/WRutYkNDo+Ga20DvI5BZx0PnzRGR7Dv89D4/mqT+iJR+zVSQAtzNcXjSxta42AjloR5JuBir2YjJla72RY6ai9vasOGwfkrOll6xue2W1m23bNoXbgn/AIs5MsPaFlqTkS3FJaupmA9HEpD4uykwhTS3spkNlK2l1Vzh8GiZZGrKlZomkDY71YQSkEAXOVDq0YKUCsCxHVodUnAlhAEV0SadCp5CQWoAishUhsSeYxPtjSAi9WiMV7tOw6FTurTbo1MlaaKTp2c5xOga0ueTvtwub+yB8vik9BcLbUVTg4diMXI4uJ0vdDpC9zXhxsGgXDBmuwkdoG41de4071YdA3mGY7myjNfieC8SC+z25P42jo8GHRt2MHknJIU/G64BTuVdKSXSOO37IRgTBo23vZWMgTNloNFfLSg7lWYhhrSDor1yh1RTdUON2c2xvAQASB+ixVZnjdl1sP78l2mqhDhZcz6aU7Gvu0AHesoqmaTlaKOOoB1L7ngA4m3DUK7wqRxhLvs57ad3y1us1AxryBv8ATzHPatXSUYaxrWgganvvb8l04U+aOXK/ixRkS4ylOp0hosu84yxpwp5b2VX07tienqLBaGTHWBT6YaKihq1Z0lWLIAn5UFD+mDigiwL26UHJ0xJJjXOaAD042RNhiUGoAcL0QemyEQCAJkZUhpUKNPByAJGZILk0XpBegDJdOoTe5J7Vsrb6br9neb39Fm8Lq3OqoIWagOGzhv1/vatx03oJDTlzGh5ju42NzoNWjTboua9HcSeyeOeGCSYydY2JrLaluXOTc3AAcNSBtXlyxqUnx2j1IzcYrlo77E6wCktddc1fi+MPAyYe1g+9KC4+Qsg7pBi0Qu+iaRcAhji4/Lgq40RpnS3tTDguf0/7TurcGVtNNACbdYW3YCeJButZJjUPVmbrY+rtmz525bWve6dsET3qFUi6x7P2guncRR0k07QbdZYMjPc5xSJscxM+zRsH4pNnkFSX2HJejQVA3Lk3ToFtRZ2zQjmFp5ekmItJ6ygDwPceRbxylZHpbjhqY8zqd0Lonsa4kh2sgeWDcSPq3eSFDeglPWxnAacSTNAAIuN3mbeC3wpwTps8vksp0TwuTrew3Pbs5zbKOJuL7eGq2rad0ZyPAvt01BHELq8ZLk2c3kN8VojT0gsqaqbYrS1B0WZxF2q62ciYiOdRqurTQeoNbKk3ougxXWKltxO29UL3pp8ywlkaKo0X+r80Sy/XFBZflYcT0QiyoAoLoIAGodWlNSkANGJAQp1KCYCBGjyJ0IiUAMlqSzRwJ2XHxTxTb0qHY9hbrukaRsLge/Obeix/Rykjjx+pDWNa11PmAaOzmBjD7DYNrSVp6hzg0mP2nAEDZmLdHDvtYqnxCn6mWHEmjssLGzH/wCc7ereT+F7YyeS8fGnCfD+ns56nBZPujazNJFgbc1nukOEOeQ9jrObxebEG1wQNp0071cip3iyS919q1dHOlRh+lsbvoFUHAFvVPNnEuIIF2nXeCGlYar6EysovphAz9SGkb7Zdp520uui9KXieWPDo7Evc2SoPuwsOZrDze4N/ha5aHEqIGJ0R9ktyp49aX9HJKW2QuhtIwUNJk0b1ER0sCczAT43JJQmoXNffMS07s2oNt2mxZ3obiroc2HSbYS7qiftxFxIt+HNa24ZVqevvuCbSJjFlawP1zAX3Lm/SuiL68nKOwyIG3vSvsPS66nPK1rS46AC5JWKwyh+kOfO4G087XDlFGDkPdZt/FSlxNHtpGofAI4vq7AWAGW2y/EKrlk0bcn2pLX924A9QVOp75XMHsnstJ0ub7RyAB1VTNLmdcbBo3uGz81fh428nL6K87Io4eHtv/iHZjoqSrhurpR5YLr1jxUZ11OVVYhFZa2an0WfxRmizn0WmZeVyYzpdXoVGDlxyNUPXQTWdGpGd5ZiI4p1leOK56zGCnmY1zW35UL8bOiMrAnm1QWAhxzmpsWOc1SmiXBm0FQEtswWObjY4p+LGhxVckLizXiQJLnhZ6PFxxSjig4qrFRdmRNukVI7FBxRMxIHeiwNLSkEC/2Hh3gdD8PVXFJAwxlmQZCCC0gZSHXJBG8G581lKKsLTmHluI4FafCarOHHZs+a482J8ua6OvHmTgoFDP0XydmnqqiBu5jXMkYOTRMx5aOQNgo8nR2YizsQqnDgOoj/AKo4g4eBWtnG9RJn20XI5M6Y0ys6O9HY6e7mNJcdXOcS5xPEudcuOg1JVpVMuFEdVkWGawBvpp4HiE1iWIuLSGWvb+7JwnxfQ3BspcQwCKV95Gm4N2ua5zHg8WvaQQddxRHo5KPYrqlo4O6h/wDU+Mk+JVth7SWjM65GzW58SdpUnr7HK7YdA7dfgeCttpXQ6T0Zh/RfN+/qZp2+68tDT3tY1oPcVYiBv7sCzbEWBtpbXUKVUS2VbUVnV/WWvqBbvSVyaSE6irFY4Wxxl28tETBwuNT5X9Flo5E9jGJOmcCRZrfZHftJ5qCxy9TDj4RPN8jL+SV+kWbZUbpFDbIlZ1sYBVUuizGKzq/q72WXxdZ5Oi4mdrX3KhF6fnOqiOXIzUXnQTaCVAaJlcE42qCzschT7ZSlxRrZoGVIUhlTzWbbMVIimKOI7NCJ+aMVJ4qqikKeDykBZtrnDenP9RdxVOZSkunTsC3/ANScrDDqskrP07rrQ4PFcq43ZMqo12HkkBavAH6OHIen+VnKFmgVzh0uVw8vNbZI8oNGEHUkzREdlVMwvvsrW+iqqqma+7XC4K8mTqqPRh/shylgOrr92qimRgdq8W3AA3Uas6Ot2jUcybjx3qsOBR3uWknYQXEnyTi79nfHFiauy6+lwgn60DxR9YHtOV2YEbRy1BHcotHhEQ2saBuaAPMqdI5rdmxVJvqznmop6Gax1yVU4pJ9WRzH5qwfNck8VUYiCdOHzWnjwvIq9HNnnWNr7KSVyba5CqbZRQ9etZ5tFgHJxrlAbKn2PTFRInFws1i7NFoJH6LPYw7RZ5OiomSqtqiOUirdqot1yGoaCCCBC4wnQE2xPNCRqGApVOxMNCn0jUhkuCJP9SnqaNS2xIodlY6FMyRK5dAos8KVBY3RsWpwZuxZ6mjWlwduq2gjKZrKQaKZFtHeotKNEqHEIxM+Mdp0UTpngbGgWDQ48SSNOAK3ujKMXJpI1MkllXTvs+/FSnu0uqupJzaD9V4cpbPUjElvAIsoRodb28UdPML66HgdFJNW0b1SjBlcpIYcwAdwVPXVO5O4lX3OVmp5bu/gocNHm7TteW5U6XQJN9ggJdusOPFCti9VOc0AaKBiNVkinkILmw5Hm20NPZkI5AWce4rq8TUjHyY8oa9FJWQKpmjsr/rmyND2EOadQQq+eNeieaisAT8RRuj5INCEMedsVLiseiu2lQ6+K4SmrQROe4jHYqA0rRYtTbVnntsVytGqF3RJu6CkZMjCeATcaeaEFi2hWdCxV7ArjD2IAtaSJTmQoUcWinsiTJbIToVEqYlcujUWemJ3WHE6BFDTK6CNaPB2b1SF8bPadc8tnmVX1uLl3Zb2W8L7e/8AJbQVdkSVmwxXpXHE0tis9wG37IP/AC+Ce/ZLF1kFZUP1fNL1Zcdpa1gPxkcuZVM9wui/sYrL088XuzZvBzG/NpSkzXFGmb2hlzMAPtN7Lx94AfEWPiinhvrwUGsc5jutjFzoHN98Dd+LU2Ph3TaGtZI3M0943g7wRuK8zJipnc1W0RXs7lEqKcHQAa8NFbTNHJMOaNqx4DUiodABsHgpEUdk68jclEgBaqImxmawFzu2pWGwAsfnGkl7gj7JGWxHdfTmorbyG5/djUD3zx/D8fjPjeu/x4VtkT6o4zhmIupJpID2mMkfGQd+RxaHDnYLVQVTJRmYQeI3jvCweMTZqqoeNhmlI/nchTVTmm7TY8V1Jnmyjs3bo0w4WVTSdKiNJGB3MaHy2K2gxSCUdl1jwdofyVWZ0xvrUiV90zXHKVEbUapSZSRFxKC6y9ZSG+i2UhDlBmorlYuNlJmR+ilBar/TuSNTwZVmejT7QmogpDQszQUxXeGhVNHTvkcGRtLncAPU8BzK1dHhXVC8zwD7rdT4u2eV04pvoHSLKjbopjiGi7jYcSqWpx5kYtGAOZ1PmVnMQxd8m1x81soJdmfZp67pCxmjPM6nwG5Z+rxwu3k95VG95O1JumFE41uY6nXhy+aSZVBc26W0nYTdS2Uh+Z+lltP2Q1OWSdnvBh8sywpK0v7PJ8tQ4e80eh/VSa4n8kdgkfdQaiAh3WRHK/f7r7bnc+fIJxkl0ZKykr0z0UKosZDuw8ZXDaDu/vipL5BuKpMSoRIAQcrx7Lh8DxCz8mNyQu6uUEH0I3Fp3hc08TjtENI2L6gBRS4y6n2OHv8A/X4qDQRPf25BYHUNO083cuStrrbFj9yCkheZIqpsrHO4An0RhVHSmqyU0hG0jK3mXaD4rsjoxkcYD7uc7iSfMkp0FMQ7E4hHCxZKS15CRJJbv4JLb707EWMOIuAsTccD8k+yovqP1VRdKY9F2Ki9gqNVa01nLLxVPHzVrQ1w4oSoTL/qAgof05BXaEYqIK5wuljNnSgkG9mg5eVyRrt4cFTRK0qTZjOTQfPX5rnxpXs1ZdQ45HFF1cDA0bSdS5x3lzt6pqrEnO3qva/b3n11QK1skU+QnamiUCURKkYV0A7VEkkoGOXQuk3QupGLurboq4tmzj7OUnm0mzh5H0Cp1d9Dz/5GXi0+hb+qF2Vj/ZHXYn6AjYdQnMyr8PdYZOGzmN35eSmZwBc6AXv/AJUM9BMTXVbIY3SyuysaLk6+FhvPIb1zTE+mE0j87I425SepzNzuj3Ztti4+Q9TosRqjUygf+puYtGzPZpBc7zFuSxGKUhikcw7NHNtwcL28DceCIvdGPkclG0ze9Eel4qT1E4Ec4GgF8sgG9l9bje2/Mb7ai64fSwOfK1zCQWEOBG0EHs25318F1vAsU6+PtWEjdHAbD94DgVT1KgxSlKFstwVmeltQC153QsLv43DsjyP9S0DpcrS7gNOZWH6WuLaRw3yXkceV9PM2Wi6B/ZgIRollJYg5I4QFEk5+KMlAgIJLUZQMO6MPSAiunYqH+uRJi6CfIKHo1Z1rdAODWjyACroW3sOOiucRbbxWMWXWikBs7vSyUibaD4Jd1o2IQ5JKUUkpWAV0TkECgA7oJLUaQCgrnog61UzmHj+gn5KlVl0dktVQn74H8wLfmmuyov5I6sw2AdvB/wAhCtcXEN+zw97v5IA6oTai/BJrZ33oqjDldlGhbcj8JaQfksZ0okLqhwto0AXvv1OzxW3rXgHrb6Na6/MAFc6rpS4uedrrk95N01VmHky+KRbdFKcEPfvBtbw7PxK1dHA6Oz2WuPIjeCsl0Jms97D9oA25tP6roFGBlCGrLwy+KHaiXOBa4Gm6xuRs8FkenT/qX24sYP4Xgn4FayR1teAJWD6cS9iJvFzj/KLf8k/QZHUWZQIyiREoOEDkRQJRIANEUERQAESCIoACCJBICdQC72D7w+KtcTfcqvwJt5L+61zvSw+KfqJLkqV0Uiuqdnr5INOiXMFHhOiBDhKSUZRFMBKBRokwCCNEjSACkUMmWRjuD2nycCo90d0Adla6+qTI7RM0kl42niB8EKx1m8OKH2egnoz/AEqrAyFzL2Li0Ac8wJ/pDlj3m4Vl0oqeslawbGi57zs9Piq0qoo4s0rl/CZgD8szedx5gn5LpdL7PcuWUT7SMP3m+psfiumUzuyiRt47+LF10nYPElc+6ZTXlY2/stJ/mP8A1W5xF9srfErnHSCXNUP+7lb6X/5JDzP4kBJKBKIlByARBFdAIANEhdC6ACSSUolIcgYEaQgkBbYPoHu4tyeZBPoPVKeU8IsrQwbtvedv98kxKpspIYkUWLeOakvKij2u9AmPFJKUklNCCQQRJgAo0VkAgA0aJGEAdQwKQOp4zxa34KTXv+reeRVX0RkvTMHAEd1ipeLPtG4ngfgmzui7RzgvJeXcT/hKKIIEq0ee3YcTrOaeBB9V1Ckb2R3LlzBqO8fFdPgfoFMzq8bpkOuku48hbX1XNqt+aSR3F7z4Zjb0W7xSbLG999gefQ2XPgkxZ30g0RRXRIOcJyUEi6NABlEgklIYZKQSgUh5SAPMgmLoJWFmrftKh1G1BBIsYcorvaCCCBMfSXIIJoTEoIIKhBBEEEEAKCCNBAG86E/7f+Iqdjn7l34XfBBBDOyH6o5+5AoILQ4At47102D2R+H5IIKZdnV43TM/jH+1k/CVhgggl7F5H7ICSUEEGITUaCCBASSjQSYxBTUiCCTAbQQQSA//2Q==" class="profile-img" alt="Profile Picture">
+            </div>
+            <div class="col-md-4 text-center" id="space">
+              <h2 class="mb-1" style="color:orangered;">SANJANA <br> AENY SUZON</h2>
+              <p class="text-muted mb-0">UI/UX Designer</p>
+            </div>
+          </div>
+          <hr>
+          <div class="mt-4 text-center">
+            <h5 class="section-title">Personal Details</h5>
+            <p id="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-centered mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h5 class="section-title">Experience</h5>
+          <p id="para"><strong>Senior UI/UX Designer (2015-Present)</strong><br>BD Tech Solution<br>The point of using lorem ispum is that it has a more or less normal distribution of letters as opposed to using content here, content here making content here making</p>
+          <p id="para"><strong>Senior UI/UX Designer (2015-Present)</strong><br>BD Tech Solution<br>The point of using lorem ispum is that it has a more or less normal distribution of letters as opposed to using content here, content here making content here making</p>
+
+          <h5 class="section-title">Reference</h5>
+          <p id="para"><strong>Jonathan Smith</strong><br>CEO, Creative IT Institute<br>+880 123 456 789<br>info@gmail.com</p>
+          <p id="para"><strong>Suzon Abdullah</strong><br>CEO, Creative IT Institute<br>+880 123 456 789<br>info@gmail.com</p>
+
+          <h5 class="section-title">Languages</h5>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <p class="mb-1">English</p>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <p class="mb-1">Hindi</p>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <p class="mb-1">French</p>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+            </div>
+            <div class="col-md-6 mb-2">
+              <p class="mb-1">Italian</p>
+              <div class="skill-bar"><div class="skill-bar-fill" style="width:60%"></div></div>
+            </div>
+          </div>
+
+          <h5 class="section-title" id="hob">My Hobbies</h5>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="square-list">
+                <li>Photography</li>
+                <li>Painting</li>
+                <li>Traveling</li>
+                <li>Reading</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="square-list">
+                <li>Photography</li>
+                <li>Painting</li>
+                <li>Traveling</li>
+                <li>Reading</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-1 d-flex justify-content-center">
+          <div class="vr-divider"></div>
+        </div>
+
+        <div class="col-md-6">
+          <h5 class="section-title">Education</h5>
+          <p id="para"><strong>Senior UI/UX Designer (2015-Present)</strong><br>BD Tech Solution<br>The point of using lorem ispum is that it has a more or less normal distribution of letters as opposed to using content here, content here making content here making</p>
+          <p id="para"><strong>Senior UI/UX Designer (2015-Present)</strong><br>BD Tech Solution<br>The point of using lorem ispum is that it has a more or less normal distribution of letters as opposed to using content here, content here making content here making</p>
+
+          <h5 class="section-title">Professional Skills</h5>
+          <p>Adobe Photoshop</p>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:90%"></div></div>
+          <p>Adobe Illustrator</p>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+          <p>Adobe InDesign</p>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:65%"></div></div>
+          <p>Adobe After Effects</p>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:55%"></div></div>
+          <p>Adobe Flash</p>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:61%"></div></div>
+
+          <h5 class="section-title" id="personal">Personal Skills</h5>
+          <ul class="square-list">
+            <li>Creativity: <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></li>
+            <li>Communication: <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="grey-star">★</span></li>
+            <li>Organization: <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="grey-star">★</span></li>
+            <li>Team Player: <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="grey-star">★</span><span class="grey-star">★</span></li>
+          </ul>
+
+          <h5 class="section-title">Awards</h5>
+          <p id="space"><strong>Best Design Awards 2017</strong><br>BD Tech Solution<br>The point of using lorem ispum is that it has a more or less normal distribution of letters as opposed to using content here, content here making content here making</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
